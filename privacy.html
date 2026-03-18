@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Guerrilla Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Archivo:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg:     #0f0e0d;
+      --bg2:    #171613;
+      --accent: #f0865a;
+      --white:  #f5f0eb;
+      --muted:  #7a7168;
+      --border: rgba(240,134,90,0.18);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Archivo', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+      z-index: 999;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(15,14,13,0.92);
+      backdrop-filter: blur(12px);
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .nav-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 5rem 2rem 6rem;
+    }
+    .eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    .updated {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 2.5rem 0 0.8rem;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--white);
+      margin: 1.5rem 0 0.5rem;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(245,240,235,0.82);
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    li {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(245,240,235,0.82);
+      margin-bottom: 0.3rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .footer-links {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">Guerrilla Gallery</a>
+    <span class="nav-tag">Art Unleashed</span>
+  </nav>
+
+  <div class="content">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective Date: March 18, 2026 &nbsp;·&nbsp; Last Updated: March 18, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to Guerrilla Gallery. We are a street art discovery and sharing platform that allows users to create art, place it at hidden real-world locations, and discover artwork left by others using a map and QR codes.</p>
+    <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website. If you disagree with its terms, please discontinue use of the Service.</p>
+
+    <h2>2. Information We Collect</h2>
+    <h3>2.1 Information You Provide</h3>
+    <ul>
+      <li><strong>Account Information:</strong> Email address and password (stored securely via Supabase authentication)</li>
+      <li><strong>Profile Information:</strong> Display name, username, profile photo, optional bio and social media links</li>
+      <li><strong>Artwork Content:</strong> Images, descriptions, titles, and location data you associate with artwork you upload or place</li>
+      <li><strong>Communications:</strong> Messages or support requests you send to us</li>
+    </ul>
+    <h3>2.2 Information Collected Automatically</h3>
+    <ul>
+      <li><strong>Location Data:</strong> With your permission, we collect your device's geographic location to display nearby artwork on the map and allow you to geotag artwork you place. You can disable this at any time in your device settings.</li>
+      <li><strong>Camera:</strong> With your permission, we access your camera to scan QR codes at art locations and to photograph artwork for upload.</li>
+      <li><strong>Photo Library:</strong> With your permission, we may access your photo library to upload images of artwork.</li>
+      <li><strong>Usage Data:</strong> Information about how you interact with the app to improve the Service.</li>
+      <li><strong>Device Information:</strong> Device type, operating system, and identifiers for app functionality.</li>
+    </ul>
+    <h3>2.3 Third-Party Services</h3>
+    <p>We use <strong>Supabase</strong> as our backend database and authentication provider. User data is stored and processed by Supabase in accordance with their <a href="https://supabase.com/privacy" target="_blank">Privacy Policy</a>.</p>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>Create and manage your account</li>
+      <li>Enable core app features (art discovery, QR scanning, map display, artwork upload)</li>
+      <li>Send verification and password reset emails</li>
+      <li>Respond to support requests</li>
+      <li>Improve and optimize the Service</li>
+      <li>Detect and prevent fraud or abuse</li>
+      <li>Comply with legal obligations</li>
+    </ul>
+
+    <h2>4. How We Share Your Information</h2>
+    <p>We do <strong>not sell</strong> your personal information. We may share it in these limited circumstances:</p>
+    <ul>
+      <li><strong>Service Providers:</strong> Supabase (database/auth) to operate the Service</li>
+      <li><strong>Public Content:</strong> Artwork you publish, your display name, and profile info may be visible to other users</li>
+      <li><strong>Legal Requirements:</strong> If required by law, court order, or to protect user safety</li>
+      <li><strong>Business Transfers:</strong> If Guerrilla Gallery is acquired or merged, your information may transfer accordingly</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>We retain your personal information for as long as your account is active or as needed to provide the Service. Upon account deletion, we will delete or anonymize your personal data within 30 days, except where law requires longer retention.</p>
+
+    <h2>6. Your Rights and Choices</h2>
+    <h3>Account Deletion</h3>
+    <p>You can delete your account at any time from within the app (Settings → Delete Account). This permanently removes your account and associated data.</p>
+    <h3>Location & Camera Access</h3>
+    <p>You can disable location and camera access at any time in your device Settings. Note that disabling location will limit art discovery and geotagging features.</p>
+    <h3>Access and Correction</h3>
+    <p>You can access and update your profile information directly within the app at any time.</p>
+    <h3>GDPR Rights (European Users)</h3>
+    <p>If you are in the European Economic Area, you have the right to access, correct, delete, or port your data, and to object to or restrict processing. Contact us at <a href="mailto:admin@guerrillagallery.art">admin@guerrillagallery.art</a> to exercise these rights.</p>
+    <h3>CCPA Rights (California Users)</h3>
+    <p>California residents have the right to know what data we collect, request deletion, and opt out of the sale of personal information (we do not sell personal information). Contact us at <a href="mailto:admin@guerrillagallery.art">admin@guerrillagallery.art</a>.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>Guerrilla Gallery is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, contact us at <a href="mailto:admin@guerrillagallery.art">admin@guerrillagallery.art</a> and we will delete it promptly.</p>
+
+    <h2>8. Security</h2>
+    <p>We implement industry-standard security measures including encrypted data transmission (HTTPS/TLS), secure authentication via Supabase, and password hashing. No method of internet transmission is 100% secure, but we strive to protect your information.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be communicated by posting the new policy on this page and updating the "Last Updated" date. Continued use of the Service after changes are posted constitutes acceptance.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>Questions, concerns, or requests regarding this Privacy Policy:</p>
+    <p>
+      <strong>Email:</strong> <a href="mailto:admin@guerrillagallery.art">admin@guerrillagallery.art</a><br>
+      <strong>Website:</strong> <a href="https://guerrillagallery.art">guerrillagallery.art</a>
+    </p>
+
+    <div class="footer-links">
+      <a href="/">← Back to Home</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="mailto:admin@guerrillagallery.art">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
